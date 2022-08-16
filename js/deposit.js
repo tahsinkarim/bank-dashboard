@@ -10,7 +10,6 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     
     // Update deposit
     const currentDepositTotal = parseFloat(previousDepositTotal) + parseFloat (newDepositAmount)
-
     depositTotalElement.innerText = currentDepositTotal;
 
     // Get Current Balance

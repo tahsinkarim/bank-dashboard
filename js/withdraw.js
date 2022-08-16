@@ -11,7 +11,6 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
         alert('Please provide a valid Number')
         // Clear Value field
         withdrawField.value = '';
-
         return;
     }
 
