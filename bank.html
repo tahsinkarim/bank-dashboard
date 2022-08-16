@@ -7,9 +7,9 @@
     <title>User Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-[#282D52]">
     <header>
-      <h1 class="text-4xl text-center mt-6">
+      <h1 class="text-4xl text-center mt-6 text-white">
         Welcome to Your<span class="text-violet-600 font-bold"> Dashboard </span
         >!!!
       </h1>
@@ -19,15 +19,21 @@
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-9/12 mx-auto text-white"
         >
-          <div class="bg-green-500 p-8 rounded-xl">
+          <div
+            class="bg-gradient-to-r from-[#28b679] to-[#6edbaf] p-8 rounded-xl"
+          >
             <h4 class="text-2xl">Deposit</h4>
             <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
           </div>
-          <div class="bg-yellow-500 p-8 rounded-xl">
+          <div
+            class="bg-gradient-to-r from-[#fc4486] to-[#FF8CB3] p-8 rounded-xl"
+          >
             <h4 class="text-2xl">Withdraw</h4>
             <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
           </div>
-          <div class="bg-violet-400 p-8 rounded-xl">
+          <div
+            class="bg-gradient-to-r from-[#1e76fe] to-[#1db8fe] p-8 rounded-xl"
+          >
             <h4 class="text-2xl">Balance</h4>
             <h2 class="text-5xl">$ <span id="user-balance">1240</span></h2>
           </div>
@@ -37,10 +43,12 @@
         <div
           class="grid grid-cols-1 md:grid-cols-2 gap-4 w-9/12 mx-auto text-white"
         >
-          <div class="bg-fuchsia-500 p-8 rounded-xl">
+          <div
+            class="bg-gradient-to-r from-[#953dff] to-[#fa8270] p-8 rounded-xl"
+          >
             <h4 class="text-2xl mb-4">Please Deposit</h4>
             <input
-              class="block mb-4 w-9/12 px-4 text-black"
+              class="block mb-4 w-9/12 px-4 text-black py-1 rounded"
               id="user-deposit"
               type="text"
               placeholder="$ Amount Deposit"
@@ -52,10 +60,12 @@
               Deposit
             </button>
           </div>
-          <div class="bg-sky-400 p-8 rounded-xl">
+          <div
+            class="bg-gradient-to-r from-[#21CEEA] to-[#c278fe] p-8 rounded-xl"
+          >
             <h4 class="text-2xl mb-4">Please Withdraw</h4>
             <input
-              class="block mb-4 w-9/12 px-4 text-black"
+              class="block mb-4 w-9/12 px-4 text-black py-1 rounded"
               id="user-withdraw"
               type="text"
               placeholder="$ Amount Withdraw"
